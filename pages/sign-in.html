@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Media/logo/images/favicon-2.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container-fluid">
+            <nav class="snavbar navbar-expand-xl bg-body-tertiary">
+                <div class="row header-row-top">
+                    <button class="col-2 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="col-8 col-xl-4">
+                        <div class="img-logo-block">
+                            <a href="../index.html"><img src="../Media/logo/images/logo-1.png" alt="LOGO" class="img-logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-2 col-xl-4">    
+                        <div class="search-bar">
+                            <form class="d-flex search-xl" role="search">
+                                <input type="search" class="form-control rounded-pill" placeholder="Buscar" aria-label="Search" aria-describedby="search-addon" />
+                            </form>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class= "search-icon" src="../Media/images/tools/search-icon.png" alt="search">
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <form class="d-flex" role="search">
+                                        <input type="search" class="form-control rounded" placeholder="Buscar" aria-label="Search" aria-describedby="search-addon" />
+                                    </form>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="col-12 col-xl-4 log-in-section">
+                            <div class="navbar-nav mb-2 mb-lg-0 text-center">
+                                <li class="nav-item header-links"><a class="nav-link active" aria-current="page" href="../pages/log-in.html">Iniciar Sesion</a></li>
+                                <li class="nav-item header-links"><a class="nav-link active" aria-current="page" href="../pages/sign-in.html">Registrarse</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 collapse navbar-collapse menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 menu">
+                            <li class="nav-item menu-links"><a class="nav-link active" aria-current="page" href="../pages/events.html">Eventos</a></li>
+                            <li class="nav-item menu-links"><a class="nav-link active" aria-current="page" href="../pages/news.html">Noticias</a></li>
+                            <li class="nav-item menu-links"><a class="nav-link active" aria-current="page" href="../pages/contact.html">Contacto</a></li>
+                            <li class="nav-item menu-links"><a class="nav-link active" aria-current="page" href="../pages/about-us.html">Quienes somos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="title">
+            <h1>Registrarse</h1>
+        </div>
+        <section id="signInMain">
+            <div class="sign-in-box">
+                <form action="">
+                    <fieldset class="sign-in-fieldset">
+                        <legend>Registrate</legend>
+                        <div class="datos">
+                            <p>Escribe tu Nombre<span>*</span></p>
+                            <input type="text" placeholder="Nombre">
+                            <p>Escribe tu Apellido<span>*</span></p>
+                            <input type="text" placeholder="Apellido">
+                            <p>Escribe tu Telefono</p>
+                            <input type="text" placeholder="Telefono">
+                            <p>Escribe tu E-mail<span>*</span></p>
+                            <input type="text" placeholder="E-mail">
+                            <p>Escribe tu Contraseña<span>*</span></p>
+                            <input type="password" placeholder="Contraseña">
+                            <h5>Cual es tu Genero?<span>*</span></h5>
+                        </div>
+                        <select name="genero" id="genero">
+                            <option value="" disabled selected>Selecciona una Opcion</option>
+                            <option value="m">Masculino</option>
+                            <option value="f">Femenino</option>
+                            <option value="o">Otro</option>
+                        </select>
+                        <div class="client-type">
+                            <p>Que tipo de Cliente eres?<span>*</span></p>
+                            <label for="">
+                                Particular
+                                <input type="radio" name="tipo-cliente" value="particular">
+                            </label>
+                            <label for="">
+                                Productor 
+                                <input type="radio" name="tipo-cliente" value="producer">
+                            </label>
+                        </div>
+                        <input type="submit" value="Registrarse" class="sign-in-button">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer-text">
+            <a href="../index.html"><img src="../Media/logo/images/logo-1.png" alt="LOGO" class="img-logo"></a>
+            <p>Electronic Movement Co. <br> Copyright 2023</p>
+            <p></p>
+        </div>
+        <div class="footer-social">
+            <h4>Social</h4>
+            <ul>
+                <li><a href="https://twitter.com/home?lang=es" target="_blank" class="footer-links"><img src="../Media/images/tools/tw-icon.png" alt="tw-icon" class="tools"> Twitter</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank" class="footer-links"><img src="../Media/images/tools/fb-icon.png" alt="fb-icon" class="tools"> Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" class="footer-links"><img src="../Media/images/tools/ig-icon.png" alt="ig-icon" class="tools"> Instagram</a></li>
+                <li><a href="https://www.youtube.com/" target="_blank" class="footer-links"><img src="../Media/images/tools/yt-icon.png" alt="yt-icon" class="tools"> YouTube</a></li>
+            </ul>
+        </div>
+        <div class="footer-about">
+            <h4>Acerca de</h4>
+            <ul>
+                <li><a href="../pages/events.html" class="footer-links">Eventos</a></li>
+                <li><a href="../pages/news.html" class="footer-links">Noticias</a></li>
+                <li><a href="../pages/contact.html" class="footer-links">Contacto</a></li>
+                <li><a href="../pages/about-us.html" class="footer-links">Quienes somos</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
