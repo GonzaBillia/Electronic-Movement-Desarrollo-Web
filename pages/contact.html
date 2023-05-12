@@ -62,41 +62,65 @@
         <div class="title">
             <h1>Contactanos</h1>
         </div>
-        <section id="contactoMain">
-            <div class="contact-form">
-                <form action="">
-                    <fieldset class="form-fieldset">
-                        <legend>Escribe tus Datos</legend>
-                        <div class="datos">
-                            <p>Escribe tu Nombre<span>*</span></p>
-                            <input type="text" placeholder="Nombre">
-                            <p>Escribe tu Apellido<span>*</span></p>
-                            <input type="text" placeholder="Apellido">
-                            <p>Escribe tu E-Mail<span>*</span></p>
-                            <input type="text" placeholder="E-mail">
-                            <p>Escribe tu Telefono</p>
-                            <input type="text" placeholder="Telefono">
-                            <p>Cuentanos tu consulta<span>*</span></p>
-                            <textarea name="Comentario" id="comentario" cols="95" rows="5" placeholder="Escribe tu consulta"></textarea>
+        <section id="contactoMain" class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-5">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h4>Contactanos</h4>
                         </div>
-                        <div class="client-type">
-                            <p>Que tipo de Cliente eres?<span>*</span></p>
-                            <label for="">
-                                Particular
-                                <input type="radio" name="tipo-cliente" value="particular">
-                            </label>
-                            <label for="">
-                                Productor 
-                                <input type="radio" name="tipo-cliente" value="producer">
-                            </label>
+                        <div class="card-body">
+                            <form class="row g-3 mb-3">
+                                <div class="col-sm-6">
+                                    <label for="validationName" class="form-label">Nombre<span>*</span></label>
+                                    <input type="text" id="validationName" class="form-control" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="validationLastName" class="form-label">Apellido<span>*</span></label>
+                                    <input type="text" id="validationLastName" class="form-control" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="validationPhoneNumber" class="form-label">Telefono<span>*</span></label>
+                                    <input type="text" id="validationPhoneNumber" class="form-control" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="validationEmail" class="form-label">Email<span>*</span></label>
+                                    <input type="email" id="validationEmail" class="form-control" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="Textarea1" class="form-label">Escribenos tu consulta<span>*</span></label>
+                                    <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="checkRadio">¿Que tipo de cliente eres?<span>*</span></label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Particular
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Productor
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
                         </div>
-                        <div class="contact-button"><input type="submit" value="Enviar"></div>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="location-map">
-                <h5>Donde estamos:</h5>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.910176060985!2d-64.19156752343314!3d-31.416600796263502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a283d6c33a11%3A0xddf274df96589f64!2sMovement!5e0!3m2!1ses-419!2sar!4v1681593076231!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9 col-lg-7 col-xl-5">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h4>Donde estamos:</h4>
+                        </div>
+                        <div class="map-responsive card-body text-center mb-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.910176060985!2d-64.19156752343314!3d-31.416600796263502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a283d6c33a11%3A0xddf274df96589f64!2sMovement!5e0!3m2!1ses-419!2sar!4v1681593076231!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

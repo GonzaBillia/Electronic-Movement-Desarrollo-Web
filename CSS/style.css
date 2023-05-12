@@ -336,90 +336,37 @@ h5{
 /*SECION NEWSLETTER*/
 
 /*SECCION CONTACTO*/
-#contactoMain{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 5em;
-}
 
-.contact-form{
-    border-radius: 10px;
-    background-color: rgb(228, 231, 233);
-    border: 2px;
-    width: 400px;
-    padding: 1em;
-}
-
-.contact-form fieldset{
-    display:flex;
-    flex-direction: column;
-}
-
-.location-map{
-    border-radius: 10px;
-    background-color: rgb(228, 231, 233);
-    border: 2px;
-    padding: 1em;
-    width: 400px;
-    margin: 0px;
-}
-
-.location-map h5{
-    margin-bottom: 1em;
-    font-size: 130%;
-}
-
-
-.contact-form textarea{
-    resize: none;
-    width: 90%;
-    margin: 1em 0em;
-}
-
-.form-fieldset{
-    padding: 10px 10px;
-}
-
-.form-fieldset input{
-    width: 70%;
-    margin: 0.5em 0em;
-}
-
-.form-fieldset p{
-    font-size: 100%;
-    margin-bottom: 0.2em;
-}
-
-.form-fieldset span{
+#contactoMain span{
     color: red;
 }
 
-.client-type{
-    margin: 0.5em 0em;
-
-    display: flex;
-    flex-direction: column;
-
-}
-.client-type label{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 40%;
-}
-.client-type label input{
-    width: 50px;
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin: 15px;
 }
 
-.contact-button{
-    text-align: center;
-    margin: 1em 0em;
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
-.contact-button input{
-width: 200px;
+@media (min-width=500px){
+    #contactoMain iframe{
+        width: 400;
+        height: 300;
+    }
+}
+@media (max-width=500px){
+    #contactoMain {
+        display: none;
+    }
 }
 
 /*SECCION CONTACTO*/
