@@ -448,55 +448,9 @@ width: 200px;
 
 /*SECCION LOGIN-SIGNIN*/
 
-#signInMain{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 5em;
-}
-
-.log-in-box, .sign-in-box{
-    border-radius: 10px;
-    background-color: rgb(228, 231, 233);
-    border: 2px;
-    width: 400px;
-    padding: 1em;
-}
-
-.log-in-fieldset, .sign-in-fieldset{
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-
-.log-in-fieldset span, .sign-in-fieldset span{
+#signInMain span, #logInMain span{
     color: red;
 }
-
-.log-in-fieldset p, .sign-in-fieldset p{
-    font-size: 80%;
-}
-
-.log-in-fieldset input, .datos input{
-    margin-bottom: 1em;
-    width: 100%;
-}
-
-.log-in-button, .sign-in-button{
-    margin-top: 1em;
-    width: 50% !important;
-}
-
-.sign-in-fieldset .client-type p{
-    font-size: 100%;
-    margin-bottom: 6px;
-}
-
-#genero{
-    width: 50%;
-}
-
 
 /*SECCION LOGIN-SIGNIN*/
 

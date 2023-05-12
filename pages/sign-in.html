@@ -62,47 +62,66 @@
         <div class="title">
             <h1>Registrarse</h1>
         </div>
-        <section id="signInMain">
-            <div class="sign-in-box">
-                <form action="">
-                    <fieldset class="sign-in-fieldset">
-                        <legend>Registrate</legend>
-                        <div class="datos">
-                            <p>Escribe tu Nombre<span>*</span></p>
-                            <input type="text" placeholder="Nombre">
-                            <p>Escribe tu Apellido<span>*</span></p>
-                            <input type="text" placeholder="Apellido">
-                            <p>Escribe tu Telefono</p>
-                            <input type="text" placeholder="Telefono">
-                            <p>Escribe tu E-mail<span>*</span></p>
-                            <input type="text" placeholder="E-mail">
-                            <p>Escribe tu Contraseña<span>*</span></p>
-                            <input type="password" placeholder="Contraseña">
-                            <h5>Cual es tu Genero?<span>*</span></h5>
+        <section id="signInMain" class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6 col-xxl-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h4>Registrarse</h4>
                         </div>
-                        <select name="genero" id="genero">
-                            <option value="" disabled selected>Selecciona una Opcion</option>
-                            <option value="m">Masculino</option>
-                            <option value="f">Femenino</option>
-                            <option value="o">Otro</option>
-                        </select>
-                        <div class="client-type">
-                            <p>Que tipo de Cliente eres?<span>*</span></p>
-                            <label for="">
-                                Particular
-                                <input type="radio" name="tipo-cliente" value="particular">
-                            </label>
-                            <label for="">
-                                Productor 
-                                <input type="radio" name="tipo-cliente" value="producer">
-                            </label>
+                        <div class="card-body">
+                            <form class="row g-3 mb-3">
+                                <div class="col-sm-6">
+                                    <label for="validationName" class="form-label">Nombre<span>*</span></label>
+                                    <input type="text" id="validationName" class="form-control" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="validationLastName" class="form-label">Apellido<span>*</span></label>
+                                    <input type="text" id="validationLastName" class="form-control" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="validationPhoneNumber" class="form-label">Telefono<span>*</span></label>
+                                    <input type="text" id="validationPhoneNumber" class="form-control" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="validationEmail" class="form-label">Email<span>*</span></label>
+                                    <input type="email" id="validationEmail" class="form-control" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="InputPassword" class="form-label">Contraseña<span>*</span></label>
+                                    <input type="password" class="form-control" id="InputPassword">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputState" class="form-label">¿Cual es tu genero?<span>*</span></label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Elige una Opcion...</option>
+                                        <option>Masculino</option>
+                                        <option>Femenino</option>
+                                        <option>Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="checkRadio">¿Que tipo de cliente eres?<span>*</span></label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Particular
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Productor
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Registrarse</button>
+                            </form>
                         </div>
-                        <input type="submit" value="Registrarse" class="sign-in-button">
-                    </fieldset>
-                </form>
+                    </div>
+                </div>
             </div>
         </section>
-        
     </main>
     <footer>
         <div class="footer-text">
