@@ -16,6 +16,12 @@ nav{
     margin: 0;
 }
 
+.header-row-top{ 
+    min-height: 80px;
+    padding: 0.4 0em;
+    margin: 0;
+}
+
 .navbar-toggler-icon{
     background-image: url(../Media/images/tools/navbar-icon.png);
     }
@@ -34,9 +40,13 @@ nav{
     width: 20em;
 }
 
-.search-bar{
+.search-bar .bar{
     height: 2em;
     border-radius: 15px;
+}
+
+.bar{
+    width: 60%;
 }
 
 .search-bar .dropdown{

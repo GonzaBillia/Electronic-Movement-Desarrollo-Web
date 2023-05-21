@@ -18,6 +18,11 @@ h1, h2, h3, h4, h5 {
   font-family: "work-sans-bold";
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #header {
   position: sticky;
   top: 0%;
@@ -33,6 +38,12 @@ nav {
 
 .container-fluid {
   padding: 0;
+  margin: 0;
+}
+
+.header-row-top {
+  min-height: 80px;
+  padding: 0.4 0em;
   margin: 0;
 }
 
@@ -54,9 +65,13 @@ nav {
   width: 20em;
 }
 
-.search-bar {
+.search-bar .bar {
   height: 2em;
   border-radius: 15px;
+}
+
+.bar {
+  width: 60%;
 }
 
 .search-bar .dropdown {
