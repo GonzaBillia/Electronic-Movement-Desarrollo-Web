@@ -445,6 +445,10 @@ h5 {
   border-color: black;
 }
 
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 113, 188, 0.25) !important;
+}
+
 #signInMain span {
   color: red;
 }
