@@ -12,10 +12,13 @@
     font-weight: 700;
 }
 
+$font-titulo: 'work-sans-bold';
+$font-parrafo: 'work-sans';
+
 body{
-    font-family: 'work-sans';
+    font-family: $font-parrafo;
 }
 
 h1, h2, h3, h4, h5{
-    font-family: 'work-sans-bold';
+    font-family: $font-titulo;
 }

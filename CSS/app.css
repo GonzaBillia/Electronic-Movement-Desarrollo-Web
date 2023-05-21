@@ -93,10 +93,11 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   list-style-type: none;
   text-align: center;
   background-color: black;
-  color: white;
+  color: black;
   padding: 0.6em 0em;
 }
 
@@ -104,8 +105,8 @@ nav {
   padding: 0px 20px !important;
   text-decoration: none;
   box-shadow: none;
-  color: white;
   border-right: 1px solid white;
+  color: white;
 }
 
 .menu-links:last-child {
@@ -122,6 +123,8 @@ nav {
 
 .btn-secondary {
   background-color: white;
+  border: 1px solid black;
+  border-radius: 7px;
 }
 
 @media (max-width: 1200px) {
