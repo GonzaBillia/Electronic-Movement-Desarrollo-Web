@@ -1,8 +1,8 @@
 footer{
     margin-top: 2em;
     padding: 2em 0em;
-    background-color: white;
-    border-top: 1px solid black;
+    background-color: $color-fondo;
+    border-top: 1px solid $color-borde-primario;
     width: 100%;
     height: 15em;
     display: grid;
@@ -21,9 +21,7 @@ footer{
     text-decoration: none;
     box-shadow: none;
     color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flexbox(row, left, center);
 }
 
 .footer-links img{
@@ -64,7 +62,7 @@ footer .img-logo{
 .footer-text{
     max-width: 100%;
     grid-area: text;
-    color: black;
+    color: $color-tipografia;
 }
 
 .footer-text p{

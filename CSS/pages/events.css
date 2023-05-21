@@ -1,64 +1,17 @@
-.card {
-  padding: 0;
-  margin: 0.4em;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 14 |     @include flexbox(column, left, center);
+ *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\pages\events.scss 14:5  root stylesheet */
 
-.event-box {
-  margin: 0.5%;
-  border-radius: 4px;
-  background-color: rgb(228, 231, 233);
-  border: 2px;
-  max-width: 27%;
-  padding: 0.5em;
-  margin-bottom: 0.4em;
-  text-align: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 14 \2502      @include flexbox(column, left, center);\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\pages\\events.scss 14:5  root stylesheet";
 }
-
-.ticket-flyer {
-  width: 100%;
-}
-
-.location .date {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.event-box img, p {
-  display: inline;
-}
-
-.title {
-  background-color: white;
-  padding: 1.5em;
-  font-size: 120%;
-  color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-h4 {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  font-size: 130%;
-}
-
-.ticket-button {
-  padding-top: 1em;
-  padding-bottom: 0.5em;
-}
-
-.see-more-button {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  text-align: center;
-}
-
-@media (max-width: 1400px) {
-  #eventos .card {
-    width: 18rem !important;
-  }
-}
-
-/*# sourceMappingURL=events.css.map */

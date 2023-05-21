@@ -2,6 +2,10 @@
     color: red;
 }
 
+#contactoMain .card{
+    border-color: $color-borde-primario
+}
+
 .map-responsive{
     overflow: hidden;
     padding-bottom: 56.25%;

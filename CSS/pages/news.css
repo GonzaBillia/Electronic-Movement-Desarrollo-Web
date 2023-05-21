@@ -1,34 +1,17 @@
-#popularPosts .card-popular-posts {
-  border: 1px solid black;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 2 |     border: 1px solid $color-borde-primario;
+ *   |                       ^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\pages\news.scss 2:23  root stylesheet */
 
-h3 {
-  font-size: 150%;
-  padding-bottom: 1em;
-  text-align: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      border: 1px solid $color-borde-primario;\d\a   \2502                        ^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\pages\\news.scss 2:23  root stylesheet";
 }
-
-h5 {
-  font-size: 105%;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
-
-@media (max-width: 1400px) {
-  #noticias p {
-    display: none;
-  }
-  #noticias .card-body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-@media (max-width: 1200px) {
-  #noticias h5 {
-    font-size: 150%;
-  }
-}
-
-/*# sourceMappingURL=news.css.map */

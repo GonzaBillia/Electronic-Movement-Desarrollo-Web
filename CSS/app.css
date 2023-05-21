@@ -23,6 +23,26 @@ h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
+.btn-primary {
+  background-color: #0071bc;
+  background: #0071bc;
+  border-color: #0071bc;
+}
+
+.btn-primary:hover {
+  background-color: #0071bc;
+  background: linear-gradient(90deg, rgb(0, 113, 188) 30%, rgb(144, 215, 255) 100%);
+}
+
+.btn-primary:active, .btn-primary:focus {
+  border-color: #003459;
+  background: #003459 !important;
+}
+
+.btn-secondary:hover, .btn-secondary:active {
+  background-color: white !important;
+}
+
 #header {
   position: sticky;
   top: 0%;
@@ -151,6 +171,8 @@ nav {
 main {
   min-height: 550px;
   width: 100%;
+  color: black;
+  background-color: white;
 }
 
 footer {
@@ -176,6 +198,7 @@ footer {
   color: black;
   display: flex;
   flex-direction: row;
+  justify-content: left;
   align-items: center;
 }
 
@@ -286,16 +309,8 @@ footer .img-logo {
   padding: 0;
   margin: 0.4em;
 }
-
-.event-box {
-  margin: 0.5%;
-  border-radius: 4px;
-  background-color: rgb(228, 231, 233);
-  border: 2px;
-  max-width: 27%;
-  padding: 0.5em;
-  margin-bottom: 0.4em;
-  text-align: center;
+.card p {
+  display: inline;
 }
 
 .ticket-flyer {
@@ -305,11 +320,8 @@ footer .img-logo {
 .location .date {
   display: flex;
   flex-direction: column;
+  justify-content: left;
   align-items: center;
-}
-
-.event-box img, p {
-  display: inline;
 }
 
 .title {
@@ -320,17 +332,13 @@ footer .img-logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 h4 {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   font-size: 130%;
-}
-
-.ticket-button {
-  padding-top: 1em;
-  padding-bottom: 0.5em;
 }
 
 .see-more-button {
@@ -360,6 +368,11 @@ h5 {
   padding-bottom: 0.5em;
 }
 
+.card-img-overlay {
+  top: auto;
+  background: linear-gradient(to top, rgb(31, 30, 30), transparent);
+}
+
 @media (max-width: 1400px) {
   #noticias p {
     display: none;
@@ -369,6 +382,7 @@ h5 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: left;
   }
 }
 @media (max-width: 1200px) {
@@ -378,6 +392,10 @@ h5 {
 }
 #contactoMain span {
   color: red;
+}
+
+#contactoMain .card {
+  border-color: black;
 }
 
 .map-responsive {
@@ -423,8 +441,16 @@ h5 {
   color: red;
 }
 
+#logInMain .card {
+  border-color: black;
+}
+
 #signInMain span {
   color: red;
+}
+
+#signInMain .card {
+  border-color: black;
 }
 
 /*# sourceMappingURL=app.css.map */

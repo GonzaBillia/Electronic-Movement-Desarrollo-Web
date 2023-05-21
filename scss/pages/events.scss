@@ -1,53 +1,31 @@
 .card{
     padding: 0;
     margin: 0.4em;
+    p{
+        display: inline;
+    }
 }
-
-.event-box{
-    margin: .5%;
-    border-radius: 4px;
-    background-color: rgb(228, 231, 233);
-    border: 2px;
-    max-width: 27%;
-    padding: .5em;
-    margin-bottom: .4em;
-    text-align: center;
-}
-
 
 .ticket-flyer{
     width: 100%;
 }
 
 .location .date{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.event-box img, p{
-    display: inline;
+    @include flexbox(column, left, center);
 }
 
 .title{
-    background-color: white;
+    background-color: $color-fondo;
     padding: 1.5em;
     font-size: 120%;
-    color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    color: $color-tipografia;
+    @include flexbox(row, center, center);
 }
 
 h4{
     padding-top: .5em;
     padding-bottom: .5em;
     font-size: 130%;
-}
-
-.ticket-button{
-    padding-top: 1em;
-    padding-bottom: .5em;
 }
 
 .see-more-button{

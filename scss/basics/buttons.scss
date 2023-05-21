@@ -1,0 +1,19 @@
+.btn-primary{
+    background-color: $color-primario;
+    background: $color-primario;
+    border-color: $color-primario;
+}
+
+.btn-primary:hover{
+    background-color: $color-primario;
+    background: $gradiente-primario;
+}
+
+.btn-primary:active, .btn-primary:focus{
+    border-color: $color-terciario;
+    background: $color-terciario !important;
+}
+
+.btn-secondary:hover, .btn-secondary:active{
+    background-color: $color-fondo !important;
+}

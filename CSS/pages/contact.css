@@ -1,21 +1,17 @@
-#contactoMain span {
-  color: red;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 6 |     border-color: $color-borde-primario
+ *   |                   ^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\pages\contact.scss 6:19  root stylesheet */
 
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-  margin: 15px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 6 \2502      border-color: $color-borde-primario\d\a   \2502                    ^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\pages\\contact.scss 6:19  root stylesheet";
 }
-
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-/*# sourceMappingURL=contact.css.map */

@@ -1,5 +1,5 @@
 #popularPosts .card-popular-posts{
-    border: 1px solid black;
+    border: 1px solid $color-borde-primario;
 }
 
 h3{
@@ -14,6 +14,10 @@ h5{
     padding-bottom: .5em;
 }
 
+.card-img-overlay{
+    top: auto;
+    background: linear-gradient(to top, rgb(31, 30, 30), transparent);
+}
 
 @media(max-width: 1400px){
     #noticias p{
@@ -21,9 +25,7 @@ h5{
     }
     #noticias .card-body{
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flexbox(column, center, left);
     }
 
 }
