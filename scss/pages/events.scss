@@ -1,0 +1,64 @@
+.card{
+    padding: 0;
+    margin: 0.4em;
+}
+
+.event-box{
+    margin: .5%;
+    border-radius: 4px;
+    background-color: rgb(228, 231, 233);
+    border: 2px;
+    max-width: 27%;
+    padding: .5em;
+    margin-bottom: .4em;
+    text-align: center;
+}
+
+
+.ticket-flyer{
+    width: 100%;
+}
+
+.location .date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-box img, p{
+    display: inline;
+}
+
+.title{
+    background-color: white;
+    padding: 1.5em;
+    font-size: 120%;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h4{
+    padding-top: .5em;
+    padding-bottom: .5em;
+    font-size: 130%;
+}
+
+.ticket-button{
+    padding-top: 1em;
+    padding-bottom: .5em;
+}
+
+.see-more-button{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+
+@media(max-width: 1400px){
+    #eventos .card{
+        width: 18rem !important;
+    }
+}

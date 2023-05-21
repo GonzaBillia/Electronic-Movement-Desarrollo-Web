@@ -1,0 +1,25 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.description p {
+  font-size: 100%;
+  margin: 0.8em;
+}
+
+.description h4 {
+  font-size: 160%;
+  margin: 0em 1em;
+  margin-top: 1em;
+}
+
+@media (max-width: 576px) {
+  .description h4 {
+    margin: 0em 0.4em;
+    margin-top: 0.5em;
+  }
+}
+
+/*# sourceMappingURL=about-us.css.map */

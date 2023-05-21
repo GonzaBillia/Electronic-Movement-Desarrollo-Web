@@ -1,0 +1,37 @@
+/*SECCION IMAGEN PRINCIPAL HOME*/
+.flyer-home {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*SECCION IMAGEN PRINCIPAL HOME*/
+.home-title {
+  display: none;
+}
+
+/*SECCION NEWSLETTER*/
+#newsletter input {
+  width: 80%;
+  display: inline;
+}
+
+#newsletter label {
+  display: block;
+}
+
+#newsletter button {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  #newsletter input {
+    width: 100%;
+  }
+  #newsletter button {
+    display: block;
+    margin-top: 0.5em;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,34 @@
+#popularPosts .card-popular-posts {
+  border: 1px solid black;
+}
+
+h3 {
+  font-size: 150%;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+h5 {
+  font-size: 105%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+@media (max-width: 1400px) {
+  #noticias p {
+    display: none;
+  }
+  #noticias .card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 1200px) {
+  #noticias h5 {
+    font-size: 150%;
+  }
+}
+
+/*# sourceMappingURL=news.css.map */

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'work-sans';
+    src: url(../fonts/work-sans/static/WorkSans-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'work-sans-bold';
+    src: url(../fonts/work-sans/static/WorkSans-Bold.ttf);
+    font-style: bold;
+    font-weight: 700;
+}
+
+body{
+    font-family: 'work-sans';
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'work-sans-bold';
+}
