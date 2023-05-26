@@ -1,19 +1,16 @@
-.btn-primary{
-    background-color: $color-primario;
+.btn{
     background: $color-primario;
     border-color: $color-primario;
+    transition: all 0.5s;
 }
 
-.btn-primary:hover{
-    background-color: $color-primario;
+.btn:hover{
     background: $gradiente-primario;
+    transform: scale(1.05);
 }
 
-.btn-primary:active, .btn-primary:focus{
+.btn:active{
     border-color: $color-terciario;
     background: $color-terciario !important;
-}
-
-.btn-secondary:hover, .btn-secondary:active{
-    background-color: $color-fondo !important;
+    transform: scale(0.95) rotateZ(1.7deg);
 }

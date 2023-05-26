@@ -15,7 +15,7 @@
     margin-top: 1em;
 }
 
-@media(max-width: 576px){
+@include mediaquery(576px){
     .description h4{
         margin: 0em 0.4em;
         margin-top: 0.5em;

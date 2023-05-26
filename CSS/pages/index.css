@@ -1,37 +1,24 @@
-/*SECCION IMAGEN PRINCIPAL HOME*/
-.flyer-home {
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 30 | / @include mediaquery(768px){
+ * 31 | |     #newsletter input{
+ * 32 | |         width: 100%;
+ * 33 | |     }
+ * 34 | |     #newsletter button{
+ * 35 | |         display: block;
+ * 36 | |         margin-top: 0.5em;
+ * 37 | |     }
+ * 38 | \ }
+ *    '
+ *   scss\pages\index.scss 30:1  root stylesheet */
 
-/*SECCION IMAGEN PRINCIPAL HOME*/
-.home-title {
-  display: none;
-}
-
-/*SECCION NEWSLETTER*/
-#newsletter input {
-  width: 80%;
-  display: inline;
-}
-
-#newsletter label {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 30 \2502  \250c  @include mediaquery(768px){\a 31 \2502  \2502      #newsletter input{\a 32 \2502  \2502          width: 100%;\a 33 \2502  \2502      }\a 34 \2502  \2502      #newsletter button{\a 35 \2502  \2502          display: block;\a 36 \2502  \2502          margin-top: 0.5em;\a 37 \2502  \2502      }\a 38 \2502  \2514  }\a    \2575 \a   scss\\pages\\index.scss 30:1  root stylesheet";
 }
-
-#newsletter button {
-  display: inline;
-}
-
-@media (max-width: 768px) {
-  #newsletter input {
-    width: 100%;
-  }
-  #newsletter button {
-    display: block;
-    margin-top: 0.5em;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */

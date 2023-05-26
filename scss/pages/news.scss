@@ -1,5 +1,6 @@
 #popularPosts .card-popular-posts{
     border: 1px solid $color-borde-primario;
+    box-shadow: 12px 10px 31px rgba(0, 0, 0, 0.15);
 }
 
 h3{
@@ -19,7 +20,7 @@ h5{
     background: linear-gradient(to top, rgb(31, 30, 30), transparent);
 }
 
-@media(max-width: 1400px){
+@include mediaquery (1400px){
     #noticias p{
         display: none;
     }
@@ -30,7 +31,7 @@ h5{
 
 }
 
-@media(max-width: 1200px){
+@include mediaquery(1200px){
     #noticias h5{
         font-size: 150%;
     }

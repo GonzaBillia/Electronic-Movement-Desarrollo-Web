@@ -96,7 +96,7 @@ nav{
     border-radius: 7px;
 }
 
-@media(max-width: 1200px){
+@include mediaquery(1200px){
     .menu{
         flex-direction: column;
         align-items: center;

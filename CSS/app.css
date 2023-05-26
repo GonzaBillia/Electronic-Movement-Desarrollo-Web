@@ -23,24 +23,21 @@ h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
-.btn-primary {
-  background-color: #0071bc;
+.btn {
   background: #0071bc;
   border-color: #0071bc;
+  transition: all 0.5s;
 }
 
-.btn-primary:hover {
-  background-color: #0071bc;
+.btn:hover {
   background: linear-gradient(90deg, rgb(0, 113, 188) 30%, rgb(144, 215, 255) 100%);
+  transform: scale(1.05);
 }
 
-.btn-primary:active, .btn-primary:focus {
+.btn:active {
   border-color: #003459;
   background: #003459 !important;
-}
-
-.btn-secondary:hover, .btn-secondary:active {
-  background-color: white !important;
+  transform: scale(0.95) rotateZ(1.7deg);
 }
 
 #header {
@@ -354,6 +351,7 @@ h4 {
 }
 #popularPosts .card-popular-posts {
   border: 1px solid black;
+  box-shadow: 12px 10px 31px rgba(0, 0, 0, 0.15);
 }
 
 h3 {

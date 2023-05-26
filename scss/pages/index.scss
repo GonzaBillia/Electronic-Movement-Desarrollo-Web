@@ -27,7 +27,7 @@
     display: inline;
 }
 
-@media(max-width: 768px){
+@include mediaquery(768px){
     #newsletter input{
         width: 100%;
     }

@@ -69,7 +69,7 @@ footer .img-logo{
     padding: 2em 0em;
 }
 
-@media(max-width: 992px){
+@include mediaquery(992px){
     footer{
         height: auto;
         grid-template-columns: repeat(3, 1fr);
@@ -91,7 +91,7 @@ footer .img-logo{
     }
 }
 
-@media(max-width: 768px){
+@include mediaquery(768px){
     .img-logo, footer .img-logo{
         width: 14em;
     }
