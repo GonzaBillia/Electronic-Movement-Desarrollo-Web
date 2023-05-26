@@ -1,11 +1,13 @@
-#logInMain span{
-    color: red;
-}
-
-#logInMain .card{
-    border-color: $color-borde-primario;
-}
-
-.form-control:focus{
-    box-shadow: 0 0 0 0.25rem  rgba(0,113,188,.25) !important;
+#logInMain{
+    span{
+        color: red;
+    }
+    
+    .card{
+        border-color: $color-borde-primario;
+    }
+    
+    .form-control:focus{
+        box-shadow: 0 0 0 0.25rem  rgba(0,113,188,.25) !important;
+    }
 }

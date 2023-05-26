@@ -3,4 +3,12 @@ main{
     width: 100%;
     color: $color-tipografia;
     background-color: $color-fondo;
+
+    .title{
+        background-color: $color-fondo;
+        padding: 1.5em;
+        font-size: 120%;
+        color: $color-tipografia;
+        @include flexbox(row, center, center);
+    }
 }

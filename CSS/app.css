@@ -172,6 +172,16 @@ main {
   color: black;
   background-color: white;
 }
+main .title {
+  background-color: white;
+  padding: 1.5em;
+  font-size: 120%;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
 footer {
   margin-top: 2em;
@@ -280,6 +290,12 @@ footer .img-logo {
   display: none;
 }
 
+.see-more-button {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
 /*SECCION NEWSLETTER*/
 #newsletter input {
   width: 80%;
@@ -303,75 +319,51 @@ footer .img-logo {
     margin-top: 0.5em;
   }
 }
-.card {
+#eventos .card {
   padding: 0;
   margin: 0.4em;
 }
-.card p {
+#eventos .card p {
   display: inline;
 }
-
-.ticket-flyer {
+#eventos .ticket-flyer {
   width: 100%;
 }
-
-.location .date {
+#eventos .location .date {
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: center;
 }
-
-.title {
-  background-color: white;
-  padding: 1.5em;
-  font-size: 120%;
-  color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-h4 {
+#eventos h4 {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   font-size: 130%;
 }
-
-.see-more-button {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  text-align: center;
-}
-
 @media (max-width: 1400px) {
-  #eventos .card {
+  #eventos #eventos .card {
     width: 18rem !important;
   }
 }
-#popularPosts .card-popular-posts {
+
+#noticias #popularPosts .card-popular-posts {
   border: 1px solid black;
   box-shadow: 12px 10px 31px rgba(0, 0, 0, 0.15);
 }
-
-h3 {
+#noticias h3 {
   font-size: 150%;
   padding-bottom: 1em;
   text-align: center;
 }
-
-h5 {
+#noticias h5 {
   font-size: 105%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
-
-.card-img-overlay {
+#noticias .card-img-overlay {
   background: linear-gradient(to top, rgb(31, 30, 30), transparent);
   top: auto;
 }
-
 @media (max-width: 1400px) {
   #noticias p {
     display: none;
@@ -389,23 +381,21 @@ h5 {
     font-size: 150%;
   }
 }
-#contactoMain span {
+
+#contactoMain #contactoMain span {
   color: red;
 }
-
-#contactoMain .card {
+#contactoMain #contactoMain .card {
   border-color: black;
 }
-
-.map-responsive {
+#contactoMain .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
   margin: 15px;
 }
-
-.map-responsive iframe {
+#contactoMain .map-responsive iframe {
   left: 0;
   top: 0;
   height: 100%;
@@ -413,45 +403,40 @@ h5 {
   position: absolute;
 }
 
-.description {
+#aboutUs .description {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-
-.description p {
+#aboutUs .description p {
   font-size: 100%;
   margin: 0.8em;
 }
-
-.description h4 {
+#aboutUs .description h4 {
   font-size: 160%;
   margin: 0em 1em;
   margin-top: 1em;
 }
-
 @media (max-width: 576px) {
-  .description h4 {
+  #aboutUs .description h4 {
     margin: 0em 0.4em;
     margin-top: 0.5em;
   }
 }
+
 #logInMain span {
   color: red;
 }
-
 #logInMain .card {
   border-color: black;
 }
-
-.form-control:focus {
+#logInMain .form-control:focus {
   box-shadow: 0 0 0 0.25rem rgba(0, 113, 188, 0.25) !important;
 }
 
 #signInMain span {
   color: red;
 }
-
 #signInMain .card {
   border-color: black;
 }

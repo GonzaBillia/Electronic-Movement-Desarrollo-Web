@@ -1,38 +1,40 @@
-#popularPosts .card-popular-posts{
-    border: 1px solid $color-borde-primario;
-    box-shadow: 12px 10px 31px rgba(0, 0, 0, 0.15);
-}
-
-h3{
-    font-size: 150%;
-    padding-bottom: 1em;
-    text-align: center;
-}
-
-h5{
-    font-size: 105%;
-    padding-top: .5em;
-    padding-bottom: .5em;
-}
-
-.card-img-overlay{
-    background: linear-gradient(to top, rgb(31, 30, 30), transparent);
-    top: auto;
-}
-
-@include mediaquery (1400px){
-    #noticias p{
-        display: none;
+#noticias{
+    #popularPosts .card-popular-posts{
+        border: 1px solid $color-borde-primario;
+        box-shadow: 12px 10px 31px rgba(0, 0, 0, 0.15);
     }
-    #noticias .card-body{
-        height: 100%;
-        @include flexbox(column, center, left);
-    }
-
-}
-
-@include mediaquery(1200px){
-    #noticias h5{
+    
+    h3{
         font-size: 150%;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+    
+    h5{
+        font-size: 105%;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+    
+    .card-img-overlay{
+        background: linear-gradient(to top, rgb(31, 30, 30), transparent);
+        top: auto;
+    }
+    
+    @include mediaquery (1400px){
+        p{
+            display: none;
+        }
+        .card-body{
+            height: 100%;
+            @include flexbox(column, center, left);
+        }
+    
+    }
+    
+    @include mediaquery(1200px){
+        h5{
+            font-size: 150%;
+        }
     }
 }

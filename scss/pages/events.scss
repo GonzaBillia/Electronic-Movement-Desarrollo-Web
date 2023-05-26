@@ -1,41 +1,29 @@
-.card{
-    padding: 0;
-    margin: 0.4em;
-    p{
-        display: inline;
+#eventos{
+    .card{
+        padding: 0;
+        margin: 0.4em;
+        p{
+            display: inline;
+        }
     }
-}
-
-.ticket-flyer{
-    width: 100%;
-}
-
-.location .date{
-    @include flexbox(column, left, center);
-}
-
-.title{
-    background-color: $color-fondo;
-    padding: 1.5em;
-    font-size: 120%;
-    color: $color-tipografia;
-    @include flexbox(row, center, center);
-}
-
-h4{
-    padding-top: .5em;
-    padding-bottom: .5em;
-    font-size: 130%;
-}
-
-.see-more-button{
-    padding-top: 2em;
-    padding-bottom: 2em;
-    text-align: center;
-}
-
-@include mediaquery(1400px){
-    #eventos .card{
-        width: 18rem !important;
+    
+    .ticket-flyer{
+        width: 100%;
+    }
+    
+    .location .date{
+        @include flexbox(column, left, center);
+    }
+    
+    h4{
+        padding-top: .5em;
+        padding-bottom: .5em;
+        font-size: 130%;
+    }
+    
+    @include mediaquery(1400px){
+        #eventos .card{
+            width: 18rem !important;
+        }
     }
 }
