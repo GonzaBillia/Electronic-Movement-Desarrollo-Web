@@ -16,8 +16,8 @@ h5{
 }
 
 .card-img-overlay{
-    top: auto;
     background: linear-gradient(to top, rgb(31, 30, 30), transparent);
+    top: auto;
 }
 
 @include mediaquery (1400px){

@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5 {
   background: #0071bc;
   border-color: #0071bc;
   transition: all 0.5s;
+  max-width: 200px;
 }
 
 .btn:hover {
@@ -367,8 +368,8 @@ h5 {
 }
 
 .card-img-overlay {
-  top: auto;
   background: linear-gradient(to top, rgb(31, 30, 30), transparent);
+  top: auto;
 }
 
 @media (max-width: 1400px) {
