@@ -20,6 +20,18 @@
         background: linear-gradient(to top, rgb(31, 30, 30), transparent);
         top: auto;
     }
+
+    .ov-hidden{
+        overflow: hidden;
+    }
+
+    .img-animate{
+        transition: all 0.5s ease;
+    }
+
+    .img-animate:hover{
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
     
     @include mediaquery (1400px){
         p{
