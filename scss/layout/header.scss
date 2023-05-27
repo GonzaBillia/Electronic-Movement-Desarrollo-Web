@@ -5,6 +5,9 @@
     width: 100%;
     background-color: $color-fondo;
     z-index: 100;
+    .container-fluid{
+        display: inline-block !important;
+    }
 }
 
 nav{
@@ -101,10 +104,6 @@ margin: 0;
     background-color: $color-fondo;
     border: 1px solid $color-borde-primario;
     border-radius: 7px;
-}
-
-#header .container-fluid{
-    display: inline-block !important;
 }
 
 .nav-link{

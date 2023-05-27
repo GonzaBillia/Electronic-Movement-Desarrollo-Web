@@ -10,10 +10,10 @@
 </head>
 <body>
     <header id="header">
-        <div class="container-fluid">
-            <nav class="snavbar navbar-expand-xl bg-body-tertiary">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary">
+            <div class="container-fluid">
                 <div class="row header-row-top">
-                    <button class="col-2 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="col-2 navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="col-8 col-xl-4">
@@ -26,37 +26,57 @@
                             <form class="d-flex search-xl" role="search">
                                 <input type="search" class="form-control rounded-pill" placeholder="Buscar" aria-label="Search" aria-describedby="search-addon" />
                             </form>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="">
+                                <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
                                 <img class= "search-icon" src="./Media/images/tools/search-icon.png" alt="search">
                                 </button>
-                                <ul class="dropdown-menu">
-                                    <form class="d-flex" role="search">
-                                        <input type="search" class="form-control rounded" placeholder="Buscar" aria-label="Search" aria-describedby="search-addon" />
-                                    </form>
-                                </ul>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="col-12 col-xl-4 log-in-section">
-                            <div class="navbar-nav mb-2 mb-lg-0 text-center">
-                                <li class="nav-item header-links"><a class="nav-link active" aria-current="page" href="./pages/log-in.html">Iniciar Sesion</a></li>
-                                <li class="nav-item header-links"><a class="nav-link active" aria-current="page" href="./pages/sign-in.html">Registrarse</a></li>
-                            </div>
+                            <ul class="navbar-nav text-center mb-2 mb-lg-0">
+                                <li class="header-links"><a class="header-links" aria-current="page" href="./pages/log-in.html">Iniciar Sesion</a></li>
+                                <li class="header-links"><a class="header-links" aria-current="page" href="./pages/sign-in.html">Registrarse</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-xl-12 collapse navbar-collapse menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0 menu">
+                </div>
+                <div class="col-12 mt-1 mb-1 ps-1 pe-1 collapse" id="collapseWidthExample"">
+                    <div>
+                        <form class="d-flex" role="search">
+                            <input type="search" class="form-control rounded" placeholder="Buscar" aria-label="Search" aria-describedby="search-addon" />
+                        </form>
+                    </div>
+                </div>
+                    <div class="col-xl-4 collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="col-12 col-xl-4 log-in-section">
+                            <ul class="navbar-nav text-center mb-2 mb-lg-0">
+                                <li class="header-links"><a class="header-links" aria-current="page" href="./pages/log-in.html">Iniciar Sesion</a></li>
+                                <li class="header-links"><a class="header-links" aria-current="page" href="./pages/sign-in.html">Registrarse</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mb-2 mb-lg-0 menu">
                             <li class="nav-item menu-links"><a class="nav-link active" aria-current="page" href="./pages/events.html">Eventos</a></li>
-                            <li class="nav-item menu-links"><a class="nav-link active" aria-current="page" href="./pages/news.html">Noticias</a></li>
+                            <li class="nav-item menu-links"><a class="nav-link active " aria-current="page" href="./pages/news.html">Noticias</a></li>
                             <li class="nav-item menu-links"><a class="nav-link active" aria-current="page" href="./pages/contact.html">Contacto</a></li>
-                            <li class="nav-item menu-links"><a class="nav-link active" aria-current="page" href="./pages/about-us.html">Quienes somos</a></li>
+                            <li class="nav-item menu-links ultima-pagina"><a class="nav-link active" aria-current="page" href="./pages/about-us.html">Quienes somos</a></li>
+                            <li class="nav-item header-links hidden-xl"><a class="nav-link active" aria-current="page" href="./pages/log-in.html">Iniciar Sesion</a></li>
+                            <li class="nav-item header-links hidden-xl"><a class="nav-link active" aria-current="page" href="./pages/sign-in.html">Registrarse</a></li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="home-title"><h1>Principal</h1></div>
