@@ -11,7 +11,7 @@
     }
     
     h5{
-        font-size: 105%;
+        font-size: 100%;
         padding-top: .5em;
         padding-bottom: .5em;
     }
@@ -25,6 +25,8 @@
         overflow: hidden;
     }
 
+    
+
     .img-animate{
         transition: all 0.5s ease;
     }
@@ -32,24 +34,31 @@
     .img-animate:hover{
         transform: scale3d(1.2, 1.2, 1.2);
     }
-    
-    
+
+    .card-text{
+        margin-bottom: 0;
+    }
+}
+
+@supports(object-fit:cover){
+    .img-fluid{
+        height:100%;
+        object-fit: cover;
+        object-position: center center;
+    }
 }
 
 
-@include mediaquery (1400px){
-    p{
-        display: none;
-    }
+@include mediaquery (1200px){
+    
     #noticias .card-body{
         height: 100%;
         @include flexbox(column, center, left);
     }
-
 }
 
-@include mediaquery(1200px){
-    #noticias h5{
-        font-size: 150%;
+@include mediaquery(768px){
+    #noticias p{
+        display: none;
     }
 }
