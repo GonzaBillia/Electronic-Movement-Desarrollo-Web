@@ -21,9 +21,11 @@
         font-size: 130%;
     }
     
-    @include mediaquery(1400px){
-        #eventos .card{
-            width: 18rem !important;
-        }
+    
+}
+
+@include mediaquery(1400px){
+    #eventos .card{
+        width: 18rem !important;
     }
 }

@@ -9,7 +9,7 @@ footer{
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-        ". text . social . about ."
+        ". texto . social . about ."
     ;
 
     .tools{
@@ -31,10 +31,10 @@ footer{
         margin-right: 5px;
     }
     
-    footer h4{
+    h4{
         padding: 0;
     }
-    footer .img-logo{
+    .img-logo{
         width: 20em;
         margin-bottom: 2em;
     }
@@ -64,7 +64,7 @@ footer{
     
     .footer-text{
         max-width: 100%;
-        grid-area: text;
+        grid-area: texto;
         color: $color-tipografia;
     }
     
@@ -72,32 +72,32 @@ footer{
         padding: 2em 0em;
     }
 
-    @include mediaquery(992px){
-        footer{
-            height: auto;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 3fr;
-            grid-template-areas: 
-                ". text ."
-                ". social ."
-                ". about ."
-            ;
-        }
-        .footer-social, .footer-about{
-            padding-top: 1em;
-        }
-        footer h4{
-            text-align: center;
-        }
-        .footer-text{
-            text-align: center;
-        }
+}
+
+@include mediaquery(992px){
+    footer{
+        height: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 3fr;
+        grid-template-areas: 
+            ". texto ."
+            ". social ."
+            ". about ."
+        ;
     }
-    
-    @include mediaquery(768px){
-        .img-logo, footer .img-logo{
-            width: 14em;
-        }
+    .footer-social, .footer-about{
+        padding-top: 1em;
+    }
+    h4{
+        text-align: center;
+    }
+    .footer-text{
+        text-align: center;
     }
 }
 
+@include mediaquery(768px){
+    footer .img-logo{
+        width: 14em;
+    }
+}

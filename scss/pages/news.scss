@@ -33,20 +33,23 @@
         transform: scale3d(1.2, 1.2, 1.2);
     }
     
-    @include mediaquery (1400px){
-        p{
-            display: none;
-        }
-        .card-body{
-            height: 100%;
-            @include flexbox(column, center, left);
-        }
     
+}
+
+
+@include mediaquery (1400px){
+    p{
+        display: none;
     }
-    
-    @include mediaquery(1200px){
-        h5{
-            font-size: 150%;
-        }
+    #noticias .card-body{
+        height: 100%;
+        @include flexbox(column, center, left);
+    }
+
+}
+
+@include mediaquery(1200px){
+    #noticias h5{
+        font-size: 150%;
     }
 }
