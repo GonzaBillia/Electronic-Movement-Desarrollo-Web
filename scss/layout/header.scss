@@ -24,7 +24,14 @@ margin: 0;
 
 .navbar-toggler-icon{
     background-image: url(../Media/images/tools/navbar-icon.png);
-    }
+}
+.navbar-toggler{
+    border-radius: 0;
+    border: 0;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
 
 .img-logo-block, .search-bar, .log-in-section{
     width: 100%;
@@ -137,6 +144,9 @@ margin: 0;
     .nav-link{
         color: $color-tipografia !important;
     }
+    .ultima-pagina{
+        margin-bottom: 1em;
+    }
 }
 
 @include mediaquery(768px){
@@ -152,7 +162,7 @@ margin: 0;
     .menu{
         justify-content: center !important;
     }
-    .br-0-xl{
+    .ultima-pagina{
         border-right: 0;
     }
 }

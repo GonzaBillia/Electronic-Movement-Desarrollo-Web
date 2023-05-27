@@ -69,6 +69,15 @@ nav {
   background-image: url(../Media/images/tools/navbar-icon.png);
 }
 
+.navbar-toggler {
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .img-logo-block, .search-bar, .log-in-section {
   width: 100%;
   height: 100%;
@@ -181,6 +190,9 @@ nav {
   .nav-link {
     color: black !important;
   }
+  .ultima-pagina {
+    margin-bottom: 1em;
+  }
 }
 @media (max-width: 768px) {
   #header .img-logo {
@@ -194,7 +206,7 @@ nav {
   .menu {
     justify-content: center !important;
   }
-  .br-0-xl {
+  .ultima-pagina {
     border-right: 0;
   }
 }
