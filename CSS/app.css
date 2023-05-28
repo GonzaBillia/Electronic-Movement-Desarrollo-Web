@@ -49,17 +49,15 @@ h1, h2, h3, h4, h5 {
   background-color: white;
   z-index: 100;
 }
-#header .container-fluid {
-  display: inline-block !important;
-}
 
 nav {
   width: 100%;
 }
 
 .container-fluid {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  display: inline-block !important;
 }
 
 .header-row-top {
@@ -88,7 +86,6 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0.6em 0em;
 }
 
 .img-logo {
@@ -104,7 +101,7 @@ nav {
   width: 60%;
 }
 
-.search-bar .dropdown {
+.search-bar .button-bar {
   display: none;
 }
 
@@ -183,14 +180,17 @@ nav {
   .search-bar .search-xl input {
     display: none;
   }
-  .search-bar .dropdown {
-    display: flex;
+  .search-bar, .button-bar {
+    display: flex !important;
   }
   .nav-link {
     color: black !important;
   }
   .ultima-pagina {
     margin-bottom: 1em;
+  }
+  .mobile-hidden {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -494,6 +494,7 @@ footer .footer-text p {
 }
 #logInMain .card {
   border-color: black;
+  box-shadow: 12px 10px 31px rgba(0, 0, 0, 0.15);
 }
 #logInMain .form-control:focus {
   box-shadow: 0 0 0 0.25rem rgba(0, 113, 188, 0.25) !important;
@@ -504,6 +505,7 @@ footer .footer-text p {
 }
 #signInMain .card {
   border-color: black;
+  box-shadow: 12px 10px 31px rgba(0, 0, 0, 0.15);
 }
 
 /*# sourceMappingURL=app.css.map */
