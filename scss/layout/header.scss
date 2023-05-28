@@ -50,10 +50,6 @@ nav{
     border-radius: 15px;
 }
 
-.bar{
-    width: 60%;
-}
-
 .search-bar .button-bar{
     display: none;
 }
@@ -98,18 +94,13 @@ nav{
     width: 24px;
 }
 
-.btn-secondary{
-    background-color: $color-fondo;
-    border: 1px solid $color-borde-primario;
-    border-radius: 7px;
-}
-
 .nav-link{
     color: $color-tipografia-secundaria !important;
 }
 
 .navbar{
     padding: 0;
+    background-color: $color-fondo !important;
 }
 
 @include mediaquery(1200px){

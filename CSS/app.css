@@ -41,6 +41,12 @@ h1, h2, h3, h4, h5 {
   transform: scale(0.95) rotateZ(1.7deg);
 }
 
+.btn-secondary {
+  background-color: white;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
 #header {
   position: sticky;
   top: 0%;
@@ -97,10 +103,6 @@ nav {
   border-radius: 15px;
 }
 
-.bar {
-  width: 60%;
-}
-
 .search-bar .button-bar {
   display: none;
 }
@@ -148,18 +150,13 @@ nav {
   width: 24px;
 }
 
-.btn-secondary {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 7px;
-}
-
 .nav-link {
   color: white !important;
 }
 
 .navbar {
   padding: 0;
+  background-color: white !important;
 }
 
 @media (max-width: 1200px) {

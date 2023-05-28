@@ -15,3 +15,9 @@
     background: $color-terciario !important;
     transform: scale(0.95) rotateZ(1.7deg);
 }
+
+.btn-secondary{
+    background-color: $color-fondo;
+    border: 0 !important;
+    border-radius: 0 !important;
+}
