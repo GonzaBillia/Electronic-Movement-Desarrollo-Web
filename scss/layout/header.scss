@@ -20,8 +20,7 @@ nav{
 
 .header-row-top{ 
     min-height: 80px;
-    padding: 0.4 0em;
-    margin: 0;
+    @include flexbox(row, center, center);
 }
 
 .navbar-toggler-icon{
