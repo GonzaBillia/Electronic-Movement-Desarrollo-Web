@@ -415,13 +415,6 @@ footer .footer-text p {
   margin-bottom: 0;
 }
 
-@supports (object-fit: cover) {
-  .img-fluid {
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-}
 @media (max-width: 1200px) {
   #noticias .card-body {
     height: 100%;
@@ -442,6 +435,13 @@ footer .footer-text p {
 @media (min-width: 768px) {
   #popularPosts .desplegar-carrusel {
     display: none;
+  }
+  @supports (object-fit: cover) {
+    .img-fluid {
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
   }
 }
 #contactoMain span {
