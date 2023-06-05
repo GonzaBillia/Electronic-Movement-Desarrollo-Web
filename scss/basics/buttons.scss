@@ -20,4 +20,12 @@
     background-color: $color-fondo;
     border: 0 !important;
     border-radius: 0 !important;
+    &:hover{
+        background-color: $color-fondo;
+        background: $color-fondo;
+    }
+    &:active{
+        background: $color-fondo !important;
+        background-color: $color-fondo !important;
+    }
 }
