@@ -7,7 +7,7 @@
  * 23 | |         }
  * 24 | \     }
  *    '
- *   sCSS\pages\about-us.sCSS 19:5  root stylesheet */
+ *   scss\pages\about-us.scss 19:5  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -17,5 +17,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502  \250c      @include Mediaquery(576px){\a 20 \2502  \2502          .description h4{\a 21 \2502  \2502              margin: 0em 0.4em;\a 22 \2502  \2502              margin-top: 0.5em;\a 23 \2502  \2502          }\a 24 \2502  \2514      }\a    \2575 \a   sCSS\\pages\\about-us.sCSS 19:5  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502  \250c      @include Mediaquery(576px){\a 20 \2502  \2502          .description h4{\a 21 \2502  \2502              margin: 0em 0.4em;\a 22 \2502  \2502              margin-top: 0.5em;\a 23 \2502  \2502          }\a 24 \2502  \2514      }\a    \2575 \a   scss\\pages\\about-us.scss 19:5  root stylesheet";
 }

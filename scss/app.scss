@@ -1,21 +1,21 @@
 // Basics
-@import './basics/_colors.sCSS';
-@import './basics/_typography.sCSS';
-@import './basics/_reset.sCSS';
-@import './basics/mixins.sCSS';
-@import './basics/buttons.sCSS';
+@import './basics/_colors.scss';
+@import './basics/_typography.scss';
+@import './basics/_reset.scss';
+@import './basics/mixins.scss';
+@import './basics/buttons.scss';
 
 //layout
-@import './layout/header.sCSS';
-@import './layout/main.sCSS';
-@import './layout/footer.sCSS';
+@import './layout/header.scss';
+@import './layout/main.scss';
+@import './layout/footer.scss';
 
 //paginas
 
-@import './pages/index.sCSS';
-@import './pages/events.sCSS';
-@import './pages/news.sCSS';
-@import './pages/contact.sCSS';
-@import './pages/about-us.sCSS';
-@import './pages/log-in.sCSS';
-@import './pages/sign-in.sCSS';
+@import './pages/index.scss';
+@import './pages/events.scss';
+@import './pages/news.scss';
+@import './pages/contact.scss';
+@import './pages/about-us.scss';
+@import './pages/log-in.scss';
+@import './pages/sign-in.scss';

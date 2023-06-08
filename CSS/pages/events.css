@@ -3,7 +3,7 @@
  * 15 |         @include flexbox(column, left, center);
  *    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *    '
- *   sCSS\pages\events.sCSS 15:9  root stylesheet */
+ *   scss\pages\events.scss 15:9  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 15 \2502          @include flexbox(column, left, center);\d\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sCSS\\pages\\events.sCSS 15:9  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 15 \2502          @include flexbox(column, left, center);\d\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\pages\\events.scss 15:9  root stylesheet";
 }
