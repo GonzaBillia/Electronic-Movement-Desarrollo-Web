@@ -28,7 +28,7 @@ nav{
 }
 
 .navbar-toggler-icon{
-    background-image: url(../media/images/tools/navbar-icon.png);
+    background-image: url(../Media/images/tools/navbar-icon.png);
 }
 .navbar-toggler{
     border-radius: 0;
@@ -106,7 +106,7 @@ nav{
     background-color: $color-fondo !important;
 }
 
-@include mediaquery(1200px){
+@include Mediaquery(1200px){
     .menu{
         flex-direction: column;
         align-items: start;
@@ -144,13 +144,13 @@ nav{
     }
 }
 
-@include mediaquery(768px){
+@include Mediaquery(768px){
     #header .img-logo{
         width: 14em;
     }
 }
 
-@media(min-width:1200px){
+@Media(min-width:1200px){
     .hidden-xl{
         display: none;
     }

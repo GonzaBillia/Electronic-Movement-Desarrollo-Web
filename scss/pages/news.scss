@@ -38,14 +38,14 @@
     }
 }
 
-@include mediaquery (1200px){
+@include Mediaquery (1200px){
     #noticias .card-body{
         height: 100%;
         @include flexbox(column, center, left);
     }
 }
 
-@include mediaquery(768px){
+@include Mediaquery(768px){
     #noticias p{
         display: none;
     }
@@ -54,7 +54,7 @@
     }
 }
 
-@media(min-width:768px){
+@Media(min-width:768px){
     #popularPosts .desplegar-carrusel{
         display: none;
     }

@@ -88,7 +88,7 @@ nav {
 }
 
 .navbar-toggler-icon {
-  background-image: url(../media/images/tools/navbar-icon.png);
+  background-image: url(../Media/images/tools/navbar-icon.png);
 }
 
 .navbar-toggler {
@@ -174,7 +174,7 @@ nav {
   background-color: white !important;
 }
 
-@media (max-width: 1200px) {
+@Media (max-width: 1200px) {
   .menu {
     flex-direction: column;
     align-items: start;
@@ -205,12 +205,12 @@ nav {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@Media (max-width: 768px) {
   #header .img-logo {
     width: 14em;
   }
 }
-@media (min-width: 1200px) {
+@Media (min-width: 1200px) {
   .hidden-xl {
     display: none;
   }
@@ -302,7 +302,7 @@ footer .footer-text p {
   padding: 2em 0em;
 }
 
-@media (max-width: 992px) {
+@Media (max-width: 992px) {
   footer {
     height: auto;
     grid-template-columns: repeat(3, 1fr);
@@ -322,7 +322,7 @@ footer .footer-text p {
     padding: 0em 0em !important;
   }
 }
-@media (max-width: 768px) {
+@Media (max-width: 768px) {
   footer .img-logo {
     width: 14em;
   }
@@ -363,7 +363,7 @@ footer .footer-text p {
   display: inline;
 }
 
-@media (max-width: 768px) {
+@Media (max-width: 768px) {
   #newsletter input {
     width: 100%;
   }
@@ -394,7 +394,7 @@ footer .footer-text p {
   font-size: 130%;
 }
 
-@media (max-width: 1400px) {
+@Media (max-width: 1400px) {
   #eventos .card {
     width: 18rem !important;
   }
@@ -430,7 +430,7 @@ footer .footer-text p {
   margin-bottom: 0;
 }
 
-@media (max-width: 1200px) {
+@Media (max-width: 1200px) {
   #noticias .card-body {
     height: 100%;
     display: flex;
@@ -439,7 +439,7 @@ footer .footer-text p {
     align-items: left;
   }
 }
-@media (max-width: 768px) {
+@Media (max-width: 768px) {
   #noticias p {
     display: none;
   }
@@ -447,7 +447,7 @@ footer .footer-text p {
     display: none;
   }
 }
-@media (min-width: 768px) {
+@Media (min-width: 768px) {
   #popularPosts .desplegar-carrusel {
     display: none;
   }
@@ -494,7 +494,7 @@ footer .footer-text p {
   margin: 0em 1em;
   margin-top: 1em;
 }
-@media (max-width: 576px) {
+@Media (max-width: 576px) {
   #aboutUs .description h4 {
     margin: 0em 0.4em;
     margin-top: 0.5em;
@@ -520,4 +520,4 @@ footer .footer-text p {
   box-shadow: 12px 10px 31px rgba(0, 0, 0, 0.15);
 }
 
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=app.CSS.map */

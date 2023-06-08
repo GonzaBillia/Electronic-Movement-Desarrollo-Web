@@ -1,6 +1,6 @@
 /* Error: Undefined mixin.
  *    ,
- * 44 | / @include mediaquery(768px){
+ * 44 | / @include Mediaquery(768px){
  * 45 | |     #newsletter input{
  * 46 | |         width: 100%;
  * 47 | |     }
@@ -10,7 +10,7 @@
  * 51 | |     }
  * 52 | \ }
  *    '
- *   scss\pages\index.scss 44:1  root stylesheet */
+ *   sCSS\pages\index.sCSS 44:1  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -20,5 +20,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 44 \2502  \250c  @include mediaquery(768px){\a 45 \2502  \2502      #newsletter input{\a 46 \2502  \2502          width: 100%;\a 47 \2502  \2502      }\a 48 \2502  \2502      #newsletter button{\a 49 \2502  \2502          display: block;\a 50 \2502  \2502          margin-top: 0.5em;\a 51 \2502  \2502      }\a 52 \2502  \2514  }\a    \2575 \a   scss\\pages\\index.scss 44:1  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 44 \2502  \250c  @include Mediaquery(768px){\a 45 \2502  \2502      #newsletter input{\a 46 \2502  \2502          width: 100%;\a 47 \2502  \2502      }\a 48 \2502  \2502      #newsletter button{\a 49 \2502  \2502          display: block;\a 50 \2502  \2502          margin-top: 0.5em;\a 51 \2502  \2502      }\a 52 \2502  \2514  }\a    \2575 \a   sCSS\\pages\\index.sCSS 44:1  root stylesheet";
 }

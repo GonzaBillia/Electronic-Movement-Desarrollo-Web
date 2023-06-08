@@ -41,7 +41,7 @@
     display: inline;
 }
 
-@include mediaquery(768px){
+@include Mediaquery(768px){
     #newsletter input{
         width: 100%;
     }

@@ -74,7 +74,7 @@ footer{
 
 }
 
-@include mediaquery(992px){
+@include Mediaquery(992px){
     footer{
         height: auto;
         grid-template-columns: repeat(3, 1fr);
@@ -99,7 +99,7 @@ footer{
     }
 }
 
-@include mediaquery(768px){
+@include Mediaquery(768px){
     footer .img-logo{
         width: 14em;
     }

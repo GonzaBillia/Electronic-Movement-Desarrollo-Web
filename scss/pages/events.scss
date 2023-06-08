@@ -24,7 +24,7 @@
     
 }
 
-@include mediaquery(1400px){
+@include Mediaquery(1400px){
     #eventos .card{
         width: 18rem !important;
     }

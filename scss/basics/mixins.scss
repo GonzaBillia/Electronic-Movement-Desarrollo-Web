@@ -5,8 +5,8 @@
     align-items: $align;
 }
 
-@mixin mediaquery($max-width){
-    @media(max-width:$max-width){
+@mixin Mediaquery($max-width){
+    @Media(max-width:$max-width){
         @content;
     }
 }
